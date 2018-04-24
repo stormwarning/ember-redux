@@ -1,0 +1,14 @@
+<nav class="er-navbar border-box pa3 ph5-ns bg-purp bb b--moon-gray{% if include.style == 'home'%} absolute w-100 bn{% endif %}">
+    <div class="mw9 w-100 flex items-center justify-between center">
+      <div>
+        <a href="/">
+          <img class="ember-logo" src="{{ site.baseurl}}/assets/emberLogo.png" style="max-height:40px"><img class="redux-logo" src="{{site.baseurl}}/assets/white.png" style="max-height:28px">
+        </a>
+      </div>
+      <div class="v-mid">
+        <a class="link dim{% if include.style == 'home'%} white{% else %} white{% endif %} f6 f5-ns dib mr3 mr4-ns" href="/docs">Docs</a>
+        <a class="link dim{% if include.style == 'home'%} white{% else %} white{% endif %} f6 f5-ns dib mr3 mr4-ns" href="/examples">Examples</a>
+        <a class="link dim{% if include.style == 'home'%} white{% else %} white{% endif %} f6 f5-ns dib" href="https://github.com/ember-redux/ember-redux">GitHub</a>
+      </div>
+    </div>
+  </nav>
