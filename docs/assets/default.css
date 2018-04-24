@@ -1,6 +1,46 @@
-body {
-  margin: 0;
+:root {
+  --purple: #744cbc;
+  --light-purple: #a994d1;
 }
+
+.purp { color: #744cbc; }
+.bg-purp { background-color: #744cbc; }
+.b--purp { border-color: #744cbc; }
+
+.hover-purp:hover,
+.hover-purp:focus { color: #744cbc; }
+
+.hover-bg-purp:hover,
+.hover-bg-purp:focus { background-color: #744cbc; }
+
+.bg-purp-gradient { background-image: linear-gradient(124deg, #744cbc 0%, #7e58c0 16%, #8764c3 33%, #9070c7 50%, #987cca 66%, #a188ce 83%, #a994d1 100%); }
+
+.er-navbar {
+  flex: 0 1 80px;
+  min-height: 80px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.er-sidebar {
+  width: calc((100% - 1536px) / 2 + 290px);
+  padding-left: calc((100% - 1536px) / 2);
+  min-width: 290px;
+}
+
+
 .footer {
   background-color: #856abf;
   color: white;
