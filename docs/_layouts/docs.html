@@ -5,35 +5,22 @@
 
   <article class="flex">
     <aside class="er-sidebar bg-near-white br b--moon-gray">
-      <ul class="list pl3 pl4-ns mt4">
-        <li>
-          <h3 class="f4 normal">Basics</h3>
-          <ul class="list pl0 mb4 lh-copy">
-            <li class=""><a class="db mv3 purp dim" href="/philosophy">Philosophy</a></li>
-            <li class=""><a class="db mv3 purp dim" href="/overview">Overview</a></li>
-            <li class=""><a class="db mv3 purp dim" href="/quickstart">Quickstart</a></li>
-            <li class=""><a class="db mv3 purp dim" href="/ddau">DDAU</a></li>
-            <li class=""><a class="db mv3 purp dim" href="/configure">Configure</a></li>
-            <li class=""><a class="db mv3 purp dim" href="/community">Community</a></li>
-          </ul>
-        </li>
-        <li>
-          <h3 class="f4 normal">Guides</h3>
-          <ul class="list pl0 mb4 lh-copy">
-            <li class=""><a class="db mv3 purp dim" href="/guides">JavaScript</a></li>
-            <li class=""><a class="db mv3 purp dim" href="/typescript">TypeScript</a></li>
-          </ul>
-        </li>
-        <li>
-          <h3 class="f4 normal">Videos</h3>
-          <ul class="list pl0 mb4 lh-copy">
-            <li class=""><a class="db mv3 purp dim" href="https://vimeo.com/151603293">Redux Intro</a></li>
-            <li class=""><a class="db mv3 purp dim" href="https://vimeo.com/166199795">Origin Story</a></li>
-            <li class=""><a class="db mv3 purp dim" href="https://vimeo.com/212534548">DC meetup</a></li>
-            <li class=""><a class="db mv3 purp dim" href="https://vimeo.com/229775616">Performance</a></li>
-          </ul>
-        </li>
-      </ul>
+      {% for section in site.data.docs %}
+        <ul class="list pl3 pl4-ns mt4">
+          <li>
+            <h3 class="f4 normal">{{ section.title }}</h3>
+            <ul class="list pl0 mb4 lh-copy">
+              {% for item in section.docs %}
+                {% assign item_url = item | prepend:"/docs/" | append:"/" %}
+                {% assign p = site.docs | where:"url", item_url | first %}
+                <li class="{% if item_url == page.url %}current{% endif %}">
+                  <a class="db mv3 purp dim" href="{{ p.url }}">{{ p.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+      {% endfor %}
     </aside>
     <main class="pb5 pb6-ns">
       <div class="mw7 mh5 mh6-ns lh-copy">
