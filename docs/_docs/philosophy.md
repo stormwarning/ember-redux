@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Philosophy - ember-redux
+redirect_from: /docs/index.html
 ---
 
 # Philosophy

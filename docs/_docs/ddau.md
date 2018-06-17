@@ -139,7 +139,7 @@ const dispatchToActions = (dispatch) => {
     ).then((fetched) => {
       fetched.json()).then((response) => {
         dispatch({ type: 'REMOVE_USER', id }));
-      } 
+      }
     }
   };
 };
