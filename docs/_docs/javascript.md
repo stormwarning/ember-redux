@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: JavaScript Guide - ember-redux
+title: JavaScript
 ---
 {% raw %}
 

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: TypeScript Guide - ember-redux
+title: TypeScript
 ---
 {% raw %}
 

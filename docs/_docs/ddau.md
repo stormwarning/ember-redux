@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Data Down, Actions Up - ember-redux
+title: Data Down, Actions Up
 ---
 
 {% raw %}

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Configure - ember-redux
+title: Configure
 ---
 
 {% raw %}

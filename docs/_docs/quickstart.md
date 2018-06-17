@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Quickstart - ember-redux
+title: Quickstart
 ---
 {% raw %}
 
