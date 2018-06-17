@@ -1,0 +1,13 @@
+- title: Basics
+  docs:
+    - philosophy
+    - overview
+    - quickstart
+    - ddau
+    - configure
+    - community
+- title: Guides
+  docs:
+    - javascript
+    - typescript
+- title: Videos

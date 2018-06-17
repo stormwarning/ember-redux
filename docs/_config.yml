@@ -1,6 +1,25 @@
 title: ember-redux
 email: toranb@gmail.com
-description: "Predictable state management for ember apps"
+description: "Predictable state management for Ember apps"
 url: "https://ember-redux.com"
 permalink: /:title/
 redirects: yes
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+  examples:
+    output: true
+defaults:
+  - scope:
+      path: _docs
+      type: docs
+    values:
+      layout: docs
+  - scope:
+      path: _examples
+      type: examples
+    values:
+      layout: docs
+plugins:
+  - jekyll-redirect-from
